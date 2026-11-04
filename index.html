@@ -7,7 +7,7 @@
 <meta name="description" content="Two .com domains, one ready-made brand for women who fix things. ChicksThatFix.com and ChixThatFix.com are offered for sale together by their owner. Make an offer.">
 <link rel="canonical" href="https://www.chicksthatfix.com/">
 <meta name="robots" content="index,follow">
-<meta name="theme-color" content="#F2611C">
+<meta name="theme-color" content="#1B2A41">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ChicksThatFix.com">
 <meta property="og:title" content="ChicksThatFix.com is for sale, with ChixThatFix.com">
@@ -16,15 +16,18 @@
 <meta property="og:image" content="https://www.chicksthatfix.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Chicks That Fix, lettered on safety orange, with a For Sale tag">
+<meta property="og:image:alt" content="The Chicks That Fix wordmark, with an X made of two crossed wrenches, on navy, with a For Sale tag">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ChicksThatFix.com is for sale, with ChixThatFix.com">
 <meta name="twitter:description" content="Two .com domains, one ready-made brand for women who fix things. Offered together by their owner. Make an offer.">
 <meta name="twitter:image" content="https://www.chicksthatfix.com/og.png">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Big+Shoulders+Display:wght@800&family=Big+Shoulders+Stencil+Display:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -40,144 +43,509 @@
 </script>
 <style>
 :root{
-  --orange:#F2611C;
-  --orange-ink:#C94A0E;
-  --steel:#2F3A4A;
-  --steel-2:#55606E;
-  --steel-rule:#46525F;
-  --galv:#EEF0F2;
-  --galv-rule:#D5DAE0;
+  --orange:#F26419;
+  --orange-deep:#D4500F;
+  --navy:#1B2A41;
+  --navy-deep:#121C2D;
+  --navy-soft:#2E4160;
+  --steel:#4F6075;
+  --concrete:#E6E9EB;
+  --concrete-deep:#D5DADD;
+  --canvas:#C9A36A;
   --white:#FFFFFF;
-  --mist:#C9D0D8;
-  --display:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;
-  --stencil:"Big Shoulders Stencil Display","Big Shoulders Display",Impact,"Arial Narrow",sans-serif;
+  --chalk:#F6F7F6;
+  --display:"Barlow Condensed","Arial Narrow","Roboto Condensed",sans-serif;
   --body:Barlow,"Segoe UI",Arial,sans-serif;
-  --measure:68ch;
-  --wrap:1120px;
-  --gutter:clamp(1.25rem,4vw,3rem);
-  --drop:clamp(2.5rem,8vh,6rem);
+  --wrap:1200px;
+  --gutter:clamp(1.25rem,4vw,3.5rem);
+  --measure:66ch;
 }
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{margin:0;background:var(--galv);color:var(--steel);font-family:var(--body);font-size:1.125rem;line-height:1.55;font-weight:400}
+body{margin:0;background:var(--white);color:var(--navy);font-family:var(--body);font-size:1.125rem;line-height:1.55;font-weight:400}
+svg{display:block}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
-h2{font-family:var(--display);font-weight:800;font-size:clamp(2.25rem,4vw,3.25rem);line-height:1;letter-spacing:.005em;margin:0 0 1.25rem;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(2.5rem,4.5vw,3.75rem);line-height:.95;letter-spacing:.005em;text-transform:uppercase;margin:0 0 1.25rem;text-wrap:balance}
 p{margin:0 0 1rem}
 a{color:inherit;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:3px}
 a:hover{text-decoration-thickness:3px}
-:focus-visible{outline:3px solid var(--steel);outline-offset:3px}
-.hero :focus-visible,.band-offer :focus-visible,.foot :focus-visible{outline-color:var(--white)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.top :focus-visible,.hero :focus-visible,.foot :focus-visible{outline-color:var(--white)}
+.band-orange :focus-visible{outline-color:var(--navy)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.svgwm{font-family:var(--display);font-weight:700}
+.svgbody{font-family:var(--body)}
 
-/* Hero: the name as a finished mark on safety orange, with a hang tag */
-.hero{position:relative;background:var(--orange);color:var(--white);overflow:hidden;min-height:100vh;min-height:min(100svh,920px);display:flex;align-items:flex-end}
-.hero-inner{position:relative;z-index:1;width:100%;max-width:var(--wrap);margin:0 auto;padding:clamp(5rem,14vh,9rem) var(--gutter) clamp(3rem,8vh,5rem)}
-.mark{font-family:var(--stencil);font-weight:900;text-transform:uppercase;font-size:clamp(4.75rem,17vw,14rem);line-height:.82;letter-spacing:.01em;margin:0 0 1.5rem;max-width:60%}
-.mark span{display:block}
-.hero-lede{font-size:clamp(1.5rem,2.1vw,1.75rem);line-height:1.3;font-weight:500;max-width:34ch;margin:0 0 1.75rem}
-.hero-actions{margin:0}
-.btn{display:inline-block;font-family:var(--display);font-weight:800;font-size:1.6rem;line-height:1;letter-spacing:.01em;padding:.9rem 1.4rem .75rem;text-decoration:none;border-radius:4px}
-.btn-steel{background:var(--steel);color:var(--white)}
-.btn-steel:hover{background:#1F2834}
-.btn-orange{background:var(--orange);color:var(--white)}
-.btn-orange:hover{background:#DD5414}
+/* Buttons */
+.btn{display:inline-block;font-family:var(--display);font-weight:700;font-size:1.4rem;line-height:1;text-transform:uppercase;letter-spacing:.02em;padding:.8rem 1.2rem .65rem;border-radius:4px;text-decoration:none;border:2px solid transparent;white-space:nowrap}
+.btn-orange{background:var(--orange);color:var(--navy);border-color:var(--orange)}
+.btn-orange:hover{background:var(--orange-deep);border-color:var(--orange-deep)}
+.btn-ghost{color:var(--white);border-color:rgba(255,255,255,.55)}
+.btn-ghost:hover{background:var(--white);color:var(--navy);border-color:var(--white)}
+.btn-navy{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.btn-navy:hover{background:var(--navy-deep);border-color:var(--navy-deep)}
 
-.tag-wrap{position:absolute;top:0;right:clamp(1rem,8vw,9rem);width:clamp(190px,19vw,260px);z-index:2;text-decoration:none;color:var(--steel);filter:drop-shadow(0 16px 18px rgba(31,40,52,.38))}
-.string{position:absolute;left:50%;top:-8px;width:3px;height:calc(var(--drop) + 26px);background:var(--steel);transform:translateX(-50%)}
-.tag{position:relative;display:block;margin-top:var(--drop);background:var(--galv);padding:2.75rem 1.15rem 1.25rem;clip-path:polygon(0 11%,14% 0,86% 0,100% 11%,100% 100%,0 100%);transform-origin:50% 23px;transform:rotate(6deg);animation:swing 1.4s cubic-bezier(.34,1.56,.64,1) .15s both}
-.hole{position:absolute;top:14px;left:50%;width:18px;height:18px;transform:translateX(-50%);border-radius:50%;background:var(--orange);box-shadow:inset 0 0 0 3px var(--steel)}
-.tag-title{display:block;font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,3.2vw,2.9rem);line-height:.95;margin-bottom:.6rem}
-.tag-domains{display:block;font-size:clamp(.85rem,1vw,.98rem);font-weight:600;line-height:1.35;margin-bottom:.9rem}
-.tag-cta{display:inline-block;font-weight:700;font-size:1rem;line-height:1.2;border-bottom:3px solid var(--orange);padding-bottom:2px}
-.tag-wrap:hover .tag-cta{border-bottom-width:4px;padding-bottom:1px}
-@keyframes swing{0%{transform:rotate(-16deg)}100%{transform:rotate(6deg)}}
+/* Top bar */
+.top{background:var(--navy);color:var(--white)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:4.75rem}
+.brand{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1;letter-spacing:.01em}
+.brand svg{width:2.4rem;height:2.4rem;flex:none}
+.nav{display:flex;align-items:center;gap:clamp(1rem,2.5vw,2rem)}
+.nav a{text-decoration:none;font-weight:500;font-size:1.02rem;color:#D7DEE8}
+.nav a:hover{color:var(--white);text-decoration:underline;text-decoration-color:var(--orange)}
+.nav .btn{font-size:1.25rem;padding:.6rem 1rem .5rem;color:var(--navy)}
+.nav .btn:hover{color:var(--navy)}
 
-/* Sections */
+/* Hero: the wordmark is the graphic */
+.hero{background:var(--navy);color:var(--white);padding:clamp(2.25rem,6vh,4.5rem) 0 clamp(3rem,8vh,5.5rem)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(2rem,5vw,5rem);align-items:end}
+.tag{display:inline-flex;align-items:center;gap:.6rem;background:var(--orange);color:var(--navy);font-weight:700;font-size:1rem;line-height:1;padding:.6rem .95rem .6rem .7rem;border-radius:3px;margin:0 0 1.75rem}
+.tag::before{content:"";flex:none;width:.85rem;height:.85rem;border-radius:50%;background:var(--orange);border:.22rem solid var(--navy)}
+.wordmark{margin:0}
+.wm{display:block;font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:clamp(5.5rem,15.5vw,14rem);line-height:.84;letter-spacing:-.015em}
+.wm-line{display:block}
+.xw{display:inline-block;height:.70em;width:.50em;vertical-align:baseline;margin-left:0;overflow:visible;fill:var(--orange)}
+.hero-copy{padding-bottom:.6rem}
+.hero-lede{font-size:clamp(1.25rem,1.8vw,1.5rem);line-height:1.4;font-weight:500;max-width:34ch;margin:0 0 1.75rem;color:#E8EDF3}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin:0}
+
+/* The one motion: the wrenches cross, the tag stamps */
+.w1{transform:rotate(30deg);animation:crossA 1s cubic-bezier(.3,1.4,.5,1) .35s both}
+.w2{transform:rotate(-30deg);animation:crossB 1s cubic-bezier(.3,1.4,.5,1) .35s both}
+@keyframes crossA{from{transform:rotate(-6deg)}to{transform:rotate(30deg)}}
+@keyframes crossB{from{transform:rotate(6deg)}to{transform:rotate(-30deg)}}
+.wm-line{animation:rise .55s ease-out both}
+.wm-line:nth-child(2){animation-delay:.08s}
+.wm-line:nth-child(3){animation-delay:.16s}
+@keyframes rise{from{opacity:0;transform:translateY(.12em)}to{opacity:1;transform:none}}
+.tag{animation:stamp .4s cubic-bezier(.2,1.2,.4,1) 1.25s both}
+@keyframes stamp{from{opacity:0;transform:scale(1.3) rotate(-4deg)}to{opacity:1;transform:none}}
+
+/* Hi-vis tape between the hero and the page */
+.stripe{height:16px;background:linear-gradient(to bottom,var(--orange) 0 4px,var(--concrete) 4px 6px,var(--orange) 6px 10px,var(--concrete) 10px 12px,var(--orange) 12px 16px)}
+
+/* Bands */
 .band{padding:clamp(3.5rem,8vw,6.5rem) 0}
-.grid-why{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(2rem,5vw,5rem);align-items:start}
+.band-concrete{background:var(--concrete)}
+.band-orange{background:var(--orange);color:var(--navy)}
+.lead{font-size:1.25rem;line-height:1.45;max-width:var(--measure);color:var(--steel);margin:0 0 2rem}
+
+/* Why the name works, with the brand sheet */
+.why{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(2rem,5vw,5rem);align-items:start}
 .prose p{max-width:var(--measure)}
 .prose p:last-child{margin-bottom:0}
-.spec{border-top:4px solid var(--steel);padding-top:1rem}
-.spec-h{font-size:1.75rem;margin:0 0 .5rem}
+.sheet-fig{margin:0}
+.sheet{background:var(--chalk);border:1px solid var(--concrete-deep);border-radius:6px;padding:clamp(1.25rem,2.5vw,2rem)}
+.sheet-wm{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:clamp(3.25rem,5.2vw,4.75rem);line-height:.86;letter-spacing:-.01em;margin:0}
+.sheet-wm span{display:block}
+.sheet-alt{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:clamp(1.8rem,2.6vw,2.4rem);line-height:1;letter-spacing:-.005em;color:var(--steel);margin:1rem 0 0}
+.sheet-alt .xw{fill:var(--steel)}
+.sheet-row{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem}
+.sheet-emblem{width:clamp(4rem,6vw,5.5rem);height:auto;flex:none}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem 1.1rem;list-style:none;margin:1.5rem 0 0;padding:1.25rem 0 0;border-top:2px solid var(--concrete-deep)}
+.chips li{display:flex;align-items:center;gap:.5rem;font-size:.95rem;font-weight:600}
+.chips i{width:1.5rem;height:1.5rem;border-radius:50%;display:block;border:1px solid rgba(27,42,65,.18)}
+.sheet-type{margin:1rem 0 0;font-size:.95rem;color:var(--steel)}
+.sheet-type b{color:var(--navy)}
+.caption{font-size:.95rem;color:var(--steel);margin:.85rem 0 0}
+
+/* What the name becomes: the mockups */
+.mocks{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(.75rem,1.6vw,1.4rem);list-style:none;margin:0;padding:0}
+.mock{grid-column:span 12}
+.mock figure{margin:0}
+.mock svg{width:100%;height:auto;border-radius:6px}
+.mock figcaption{font-weight:600;font-size:1rem;line-height:1.35;margin:.65rem 0 0}
+.m-tv{grid-column:span 8}
+.m-box{grid-column:span 4}
+.m-cap,.m-phone,.m-shop{grid-column:span 4}
+
+/* Who it fits */
+.fits-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(2rem,5vw,5rem);align-items:start}
+.fits{list-style:none;margin:0;padding:0}
+.fits li{display:grid;grid-template-columns:3.5rem minmax(0,1fr);gap:0 1.25rem;align-items:start;padding:1.35rem 0;border-top:2px solid var(--concrete-deep)}
+.fits li:last-child{border-bottom:2px solid var(--concrete-deep)}
+.fits svg{width:3.5rem;height:3.5rem}
+.fits b{display:block;font-size:1.2rem;line-height:1.3;margin-bottom:.3rem}
+.fits p{margin:0;color:var(--steel)}
+
+/* What is included, how a sale works */
+.deal{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(2rem,5vw,5rem);align-items:start}
 .spec dl{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:1.25rem}
-.spec dt,.spec dd{margin:0;padding:.7rem 0;border-top:2px solid var(--galv-rule)}
-.spec dt{font-weight:600;color:var(--steel-2);white-space:nowrap}
+.spec dt,.spec dd{margin:0;padding:.75rem 0;border-top:2px solid var(--concrete-deep)}
+.spec dt{font-weight:600;color:var(--steel);white-space:nowrap}
 .spec dd{font-weight:500}
+.steps{list-style:none;margin:0;padding:0;counter-reset:step}
+.steps li{counter-increment:step;display:grid;grid-template-columns:3.25rem minmax(0,1fr);gap:0 1.25rem;padding:1.25rem 0;border-top:2px solid var(--concrete-deep)}
+.steps li:last-child{border-bottom:2px solid var(--concrete-deep)}
+.steps li::before{content:counter(step);display:grid;place-items:center;width:3.25rem;height:3.75rem;background:var(--navy);color:var(--white);font-family:var(--display);font-weight:700;font-size:1.9rem;line-height:1;padding-top:.1rem;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.steps b{display:block;font-size:1.2rem;line-height:1.3;margin-bottom:.3rem}
+.steps p{margin:0;color:var(--steel)}
 
-.fits{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:0 clamp(2rem,4vw,4rem)}
-.fits li{padding:1.1rem 0 1.35rem;border-top:2px solid var(--steel);max-width:var(--measure)}
-.fits b{display:block;font-weight:700;font-size:1.2rem;line-height:1.3;margin-bottom:.3rem}
-
-.steps{list-style:none;counter-reset:step;margin:0;padding:0;max-width:var(--measure)}
-.steps li{counter-increment:step;display:grid;grid-template-columns:4.5rem minmax(0,1fr);gap:0 1rem;padding:1.25rem 0;border-top:2px solid var(--galv-rule)}
-.steps li:last-child{border-bottom:2px solid var(--galv-rule)}
-.steps li::before{content:counter(step);font-family:var(--display);font-weight:800;font-size:3.25rem;line-height:.9;color:var(--orange-ink)}
-.steps b{display:block;font-weight:700;font-size:1.2rem;line-height:1.3;margin-bottom:.3rem}
-.steps p{margin:0}
-
-.band-offer{background:var(--steel);color:var(--white)}
-.band-offer h2{color:var(--white)}
-.offer-lead{font-size:1.35rem;font-weight:500;margin-bottom:.75rem}
-.offer-addr{font-family:var(--display);font-weight:800;font-size:clamp(1.9rem,5vw,4rem);line-height:1;margin:0 0 1.75rem;overflow-wrap:anywhere}
-.offer-addr a{text-decoration-color:var(--orange);text-decoration-thickness:4px;text-underline-offset:6px}
+/* Make an offer */
+.offer{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(2rem,5vw,5rem);align-items:start}
+.offer-lead{font-size:1.3rem;font-weight:500;margin:0 0 .5rem}
+.offer-addr{font-family:var(--display);font-weight:700;font-size:clamp(1.9rem,3.8vw,3.4rem);line-height:1;margin:0 0 1.5rem;overflow-wrap:anywhere}
+.offer-addr a{text-decoration-color:var(--navy);text-decoration-thickness:4px;text-underline-offset:6px}
 .offer-addr a:hover{text-decoration-thickness:5px}
-.offer-actions{margin:0 0 1.75rem}
-.offer-note{max-width:var(--measure);color:var(--mist);margin:0}
+.offer-actions{margin:0 0 1.5rem}
+.offer-note{max-width:var(--measure);margin:0}
+.offer-note noscript{display:block;margin-top:.5rem;font-weight:600}
+.kit{background:var(--navy);color:var(--white);border-radius:6px;padding:clamp(1.25rem,2.5vw,2rem)}
+.kit h3{font-family:var(--display);font-weight:700;font-size:1.6rem;line-height:1;text-transform:uppercase;letter-spacing:.01em;margin:0 0 1rem}
+.kit ul{list-style:none;margin:0;padding:0}
+.kit li{padding:.7rem 0;border-top:1px solid rgba(255,255,255,.18);display:grid;grid-template-columns:1.1rem minmax(0,1fr);gap:.8rem;align-items:start}
+.kit li::before{content:"";width:1.1rem;height:1.25rem;margin-top:.2rem;background:var(--orange);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.kit p{margin:1rem 0 0;color:#C9D2DE;font-size:.98rem}
 
-.foot{background:var(--steel);color:var(--mist);font-size:.95rem;padding:0 0 2.5rem}
-.foot .wrap{border-top:2px solid var(--steel-rule);padding-top:1.5rem}
-.foot p{max-width:var(--measure);margin:0 0 .5rem}
+/* Footer */
+.foot{background:var(--navy);color:#C9D2DE;font-size:.95rem;padding:2.75rem 0}
+.foot p{max-width:var(--measure);margin:0 0 .65rem}
+.foot p:last-child{margin-bottom:0}
+.foot .brand{color:var(--white);margin-bottom:1.25rem}
 
-@media (max-width:720px){
-  .hero{align-items:flex-start}
-  .hero-inner{padding-top:calc(var(--drop) + 15.5rem)}
-  .mark{max-width:100%;font-size:clamp(4.25rem,20vw,7rem)}
-  .tag-wrap{right:var(--gutter);width:9.75rem}
-  .tag{padding:2.5rem .9rem 1rem}
-  .tag-title{font-size:1.75rem}
-  .tag-domains{font-size:.82rem}
-  .tag-cta{font-size:.95rem}
-  .grid-why{grid-template-columns:1fr}
-  .steps li{grid-template-columns:3rem minmax(0,1fr)}
-  .steps li::before{font-size:2.5rem}
-  .btn{font-size:1.45rem}
+@media (max-width:980px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-copy{padding-bottom:0}
+  .why,.deal,.offer,.fits-grid{grid-template-columns:1fr}
+  .nav a:not(.btn){display:none}
+  .m-tv{grid-column:span 12}
+  .m-box,.m-cap,.m-phone,.m-shop{grid-column:span 6}
+}
+@media (max-width:620px){
+  .wm{font-size:clamp(5.25rem,24vw,7rem)}
+  .btn{font-size:1.35rem;padding:.8rem 1.1rem .65rem}
+  .nav .btn{font-size:1.15rem}
+  .brand{font-size:1.35rem}
+  .m-box,.m-cap,.m-phone,.m-shop{grid-column:span 12}
+  .steps li{grid-template-columns:2.75rem minmax(0,1fr);gap:0 1rem}
+  .steps li::before{width:2.75rem;height:3.2rem;font-size:1.6rem}
+  .fits li{grid-template-columns:2.75rem minmax(0,1fr);gap:0 1rem}
+  .fits svg{width:2.75rem;height:2.75rem}
+  .spec dl{grid-template-columns:1fr}
+  .spec dt{padding-bottom:0;border-top-width:2px}
+  .spec dd{border-top:0;padding-top:.2rem}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .tag{animation:none}
+  .w1,.w2,.wm-line,.tag{animation:none}
 }
 </style>
 </head>
 <body>
 
-<header class="hero">
-  <div class="hero-inner">
-    <h1 class="mark"><span>Chicks</span><span>That</span><span>Fix</span></h1>
-    <p class="hero-lede">Two .com domains, one ready-made brand for women who fix things. ChicksThatFix.com and ChixThatFix.com are for sale together, offered directly by their owner.</p>
-    <p class="hero-actions"><a class="btn btn-steel" href="#offer">Make an offer</a></p>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- One combination wrench, vertical, centred on 0,0: open end up, box end down -->
+    <g id="wrench">
+      <path transform="rotate(14 0 -58)" d="M-8-78.5V-54a8 8 0 0 0 16 0V-78.5A22 22 0 1 1-8-78.5Z"/>
+      <rect x="-12" y="-44" width="24" height="88" rx="5"/>
+      <path fill-rule="evenodd" d="M-22 58a22 22 0 1 0 44 0a22 22 0 1 0-44 0ZM9 58 4.5 65.8h-9L-9 58l4.5-7.8h9Z"/>
+    </g>
+    <!-- The X: two wrenches crossed -->
+    <symbol id="xmark" viewBox="-58 -82 116 164" overflow="visible">
+      <g transform="rotate(30)"><use href="#wrench"/></g>
+      <g transform="rotate(-30)"><use href="#wrench"/></g>
+    </symbol>
+    <!-- The emblem: a hex nut in safety orange with the X in navy -->
+    <symbol id="emblem" viewBox="0 0 120 120">
+      <path d="M60 2 110.2 31v58L60 118 9.8 89V31Z" fill="#F26419"/>
+      <path d="M60 12.5 100.8 36v47L60 106.5 19.2 83V36Z" fill="none" stroke="#1B2A41" stroke-opacity=".28" stroke-width="2"/>
+      <g transform="translate(60 60) scale(.4)" fill="#1B2A41">
+        <g transform="rotate(30)"><use href="#wrench"/></g>
+        <g transform="rotate(-30)"><use href="#wrench"/></g>
+      </g>
+    </symbol>
+    <!-- The emblem reversed, for orange fields -->
+    <symbol id="emblem-navy" viewBox="0 0 120 120">
+      <path d="M60 2 110.2 31v58L60 118 9.8 89V31Z" fill="#1B2A41"/>
+      <path d="M60 12.5 100.8 36v47L60 106.5 19.2 83V36Z" fill="none" stroke="#fff" stroke-opacity=".22" stroke-width="2"/>
+      <g transform="translate(60 60) scale(.4)" fill="#F26419">
+        <g transform="rotate(30)"><use href="#wrench"/></g>
+        <g transform="rotate(-30)"><use href="#wrench"/></g>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="ChicksThatFix.com, top of page">
+      <svg viewBox="0 0 120 120" aria-hidden="true"><use href="#emblem"/></svg>
+      <span>ChicksThatFix.com</span>
+    </a>
+    <nav class="nav" aria-label="Page sections">
+      <a href="#why">Why it works</a>
+      <a href="#inuse">The name in use</a>
+      <a href="#fits">Who it fits</a>
+      <a href="#how">How a sale works</a>
+      <a class="btn btn-orange" href="#offer">Make an offer</a>
+    </nav>
   </div>
-  <a class="tag-wrap" href="#offer">
-    <span class="string" aria-hidden="true"></span>
-    <span class="tag">
-      <span class="hole" aria-hidden="true"></span>
-      <span class="tag-title">For sale</span>
-      <span class="tag-domains">ChicksThatFix.com<br>with ChixThatFix.com</span>
-      <span class="tag-cta">Make an offer</span>
-    </span>
-  </a>
 </header>
 
-<main>
-  <section class="band" aria-labelledby="why-h">
-    <div class="wrap grid-why">
+<main id="top">
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap">
+      <div>
+        <p class="tag">For sale by the owner</p>
+        <h1 class="wordmark" id="hero-h">
+          <span class="sr-only">Chicks That Fix</span>
+          <span class="wm" aria-hidden="true">
+            <span class="wm-line">Chicks</span>
+            <span class="wm-line">That</span>
+            <span class="wm-line">Fi<svg class="xw" viewBox="-58 -82 116 164" focusable="false"><g class="w1"><use href="#wrench"/></g><g class="w2"><use href="#wrench"/></g></svg></span>
+          </span>
+        </h1>
+      </div>
+      <div class="hero-copy">
+        <p class="hero-lede">Two .com domains, one ready-made brand for women who fix things. ChicksThatFix.com and ChixThatFix.com are for sale together, offered directly by the owner.</p>
+        <p class="hero-actions"><a class="btn btn-orange" href="#offer">Make an offer</a><a class="btn btn-ghost" href="#inuse">See the name in use</a></p>
+      </div>
+    </div>
+  </section>
+  <div class="stripe" aria-hidden="true"></div>
+
+  <section class="band" id="why" aria-labelledby="why-h">
+    <div class="wrap why">
       <div class="prose">
-        <h2 id="why-h">Why this name works</h2>
+        <h2 id="why-h">Why the name works</h2>
         <p>Say it once and it sticks. Chicks That Fix rhymes, it names the work (repair, trades, hands-on skill) and it carries an attitude: capable, unbothered, a little cheeky. That is a lot for three words to do, and it does it without a tagline.</p>
         <p>It is already a show title, a shop sign, a hashtag, a tool line and a podcast name, with no explaining required. Women-run repair services, women in the trades and women-led DIY channels are no longer a niche story. The name that owns this space should be short, memorable and unmistakably theirs.</p>
         <p>Two spellings, one owner. ChicksThatFix.com is the formal name; ChixThatFix.com is the one people type on a phone and the one that fits a social handle. Buying both means nobody else can trade on the shorter spelling, and both resolve wherever you decide.</p>
+        <p>Both spellings end in the same letter, and that letter is the logo. The X is two crossed wrenches: it works at the size of a van and at the size of a favicon, and it belongs to whoever owns these two names.</p>
       </div>
-      <aside class="spec" id="included" aria-labelledby="spec-h">
-        <h2 class="spec-h" id="spec-h">What is included</h2>
-        <dl>
+      <figure class="sheet-fig">
+        <div class="sheet">
+          <div class="sheet-row">
+            <p class="sheet-wm" role="img" aria-label="The Chicks That Fix wordmark, with the X drawn as two crossed wrenches"><span>Chicks</span><span>That</span><span>Fi<svg class="xw" viewBox="-58 -82 116 164" aria-hidden="true" focusable="false"><g transform="rotate(30)"><use href="#wrench"/></g><g transform="rotate(-30)"><use href="#wrench"/></g></svg></span></p>
+            <svg class="sheet-emblem" viewBox="0 0 120 120" role="img" aria-label="The emblem: a hex nut with the crossed-wrench X"><use href="#emblem"/></svg>
+          </div>
+          <p class="sheet-alt" role="img" aria-label="Chix That Fix, the short spelling, set in the same mark">Chi<svg class="xw" viewBox="-58 -82 116 164" aria-hidden="true" focusable="false"><g transform="rotate(30)"><use href="#wrench"/></g><g transform="rotate(-30)"><use href="#wrench"/></g></svg> That Fi<svg class="xw" viewBox="-58 -82 116 164" aria-hidden="true" focusable="false"><g transform="rotate(30)"><use href="#wrench"/></g><g transform="rotate(-30)"><use href="#wrench"/></g></svg></p>
+          <ul class="chips" aria-label="Palette">
+            <li><i style="background:#F26419"></i>Safety orange</li>
+            <li><i style="background:#1B2A41"></i>Oil</li>
+            <li><i style="background:#4F6075"></i>Steel</li>
+            <li><i style="background:#E6E9EB"></i>Concrete</li>
+            <li><i style="background:#C9A36A"></i>Canvas</li>
+          </ul>
+          <p class="sheet-type"><b>Type:</b> Barlow Condensed for the mark and the headlines, Barlow for everything else. Both are open fonts, free to use anywhere.</p>
+        </div>
+        <figcaption class="caption">A starting identity, drawn for this page to show what the name becomes. The sale is the two domain names.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band band-concrete" id="inuse" aria-labelledby="inuse-h">
+    <div class="wrap">
+      <h2 id="inuse-h">What the name becomes</h2>
+      <p class="lead">Six places the name could live, drawn for this page. None of these exist yet; the point is how little explaining any of them needs.</p>
+      <ul class="mocks">
+
+        <li class="mock m-van"><figure>
+          <svg viewBox="0 0 1200 560" role="img" aria-labelledby="t-van"><title id="t-van">The wordmark on the side of a white service van, with safety-orange chevrons at the rear</title>
+            <defs><pattern id="chev" width="42" height="36" patternUnits="userSpaceOnUse"><rect width="42" height="36" fill="#fff"/><path d="M0 0 42 18V36L0 18Z" fill="#F26419"/></pattern></defs>
+            <rect width="1200" height="560" fill="#F6F7F6"/>
+            <rect y="498" width="1200" height="62" fill="#E6E9EB"/>
+            <ellipse cx="600" cy="498" rx="470" ry="13" fill="#1B2A41" opacity=".12"/>
+            <path d="M150 470V268q0-30 26-46l78-74q12-20 46-20h702q32 0 32 32v288q0 22-22 22Z" fill="#fff" stroke="#CDD3D8" stroke-width="2.5"/>
+            <path d="M150 410h884v60H150Z" fill="#EEF1F2"/>
+            <path d="M150 470V414h884v34q0 22-22 22Z" fill="#EEF1F2" stroke="#CDD3D8" stroke-width="2.5"/>
+            <path d="M184 232 258 152h38l-74 80Z" fill="#1B2A41"/>
+            <rect x="306" y="150" width="128" height="84" rx="10" fill="#1B2A41"/>
+            <path d="M322 234 384 150h26l-62 84Z" fill="#2E4160"/>
+            <rect x="266" y="214" width="12" height="28" rx="3" fill="#1B2A41"/>
+            <path d="M446 142V468" stroke="#D5DADD" stroke-width="3"/>
+            <rect x="402" y="266" width="30" height="9" rx="3" fill="#B8C0C8"/>
+            <rect x="150" y="392" width="884" height="18" fill="#F26419"/>
+            <rect x="990" y="150" width="42" height="236" fill="url(#chev)"/>
+            <rect x="152" y="300" width="12" height="34" rx="3" fill="#E6E9EB" stroke="#CDD3D8" stroke-width="2"/>
+            <rect x="1022" y="300" width="10" height="34" rx="3" fill="#F26419"/>
+            <text class="svgwm" x="560" y="262" font-size="100" fill="#1B2A41" textLength="256" lengthAdjust="spacingAndGlyphs">CHICKS</text>
+            <text class="svgwm" x="560" y="350" font-size="100" fill="#1B2A41" textLength="275" lengthAdjust="spacingAndGlyphs">THAT FI</text>
+            <use href="#xmark" x="835" y="280" width="50" height="70" fill="#F26419"/>
+            <text class="svgbody" x="560" y="446" font-size="22" font-weight="600" fill="#4F6075">chicksthatfix.com</text>
+            <circle cx="300" cy="470" r="78" fill="#F6F7F6"/><circle cx="884" cy="470" r="78" fill="#F6F7F6"/>
+            <circle cx="300" cy="470" r="62" fill="#1B2A41"/><circle cx="300" cy="470" r="36" fill="#4F6075"/><circle cx="300" cy="470" r="12" fill="#E6E9EB"/>
+            <circle cx="884" cy="470" r="62" fill="#1B2A41"/><circle cx="884" cy="470" r="36" fill="#4F6075"/><circle cx="884" cy="470" r="12" fill="#E6E9EB"/>
+          </svg>
+          <figcaption>On the side of a service van.</figcaption>
+        </figure></li>
+
+        <li class="mock m-tv"><figure>
+          <svg viewBox="0 0 800 500" role="img" aria-labelledby="t-tv"><title id="t-tv">A television showing a series title card: the wordmark in white and orange on navy</title>
+            <defs><radialGradient id="vig" cx="50%" cy="45%" r="70%"><stop offset="0" stop-color="#2E4160"/><stop offset="1" stop-color="#1B2A41"/></radialGradient></defs>
+            <rect width="800" height="500" fill="#fff"/>
+            <rect x="40" y="34" width="720" height="412" rx="16" fill="#121C2D"/>
+            <rect x="54" y="48" width="692" height="384" rx="8" fill="url(#vig)"/>
+            <text class="svgwm" x="246.5" y="232" font-size="120" fill="#fff" textLength="307" lengthAdjust="spacingAndGlyphs">CHICKS</text>
+            <text class="svgwm" x="202.5" y="338" font-size="120" fill="#fff" textLength="330" lengthAdjust="spacingAndGlyphs">THAT FI</text>
+            <use href="#xmark" x="533" y="254" width="60" height="84" fill="#F26419"/>
+            <rect x="340" y="362" width="120" height="5" fill="#F26419"/>
+            <text class="svgbody" x="400" y="398" font-size="20" font-weight="500" fill="#C9D2DE" text-anchor="middle">a new series</text>
+            <rect x="360" y="446" width="80" height="18" fill="#121C2D"/>
+            <rect x="300" y="462" width="200" height="10" rx="3" fill="#121C2D"/>
+          </svg>
+          <figcaption>As a series title card.</figcaption>
+        </figure></li>
+
+        <li class="mock m-box"><figure>
+          <svg viewBox="0 0 600 600" role="img" aria-labelledby="t-box"><title id="t-box">A navy steel toolbox with the emblem and wordmark on its front</title>
+            <rect width="600" height="600" fill="#C9A36A"/>
+            <ellipse cx="300" cy="502" rx="236" ry="16" fill="#1B2A41" opacity=".2"/>
+            <rect x="80" y="300" width="440" height="198" rx="10" fill="#1B2A41"/>
+            <path d="M80 300v-38q0-26 26-26h388q26 0 26 26v38Z" fill="#243655"/>
+            <rect x="96" y="244" width="408" height="8" rx="4" fill="#3B5078"/>
+            <path d="M232 236v-22q0-18 18-18h100q18 0 18 18v22" fill="none" stroke="#1B2A41" stroke-width="16" stroke-linecap="round"/>
+            <path d="M250 214h100" stroke="#F26419" stroke-width="10" stroke-linecap="round"/>
+            <rect x="276" y="290" width="48" height="26" rx="4" fill="#F26419"/>
+            <rect x="288" y="298" width="24" height="6" rx="2" fill="#1B2A41" opacity=".45"/>
+            <rect x="100" y="498" width="44" height="10" rx="3" fill="#121C2D"/>
+            <rect x="456" y="498" width="44" height="10" rx="3" fill="#121C2D"/>
+            <use href="#emblem" x="112" y="346" width="96" height="96"/>
+            <text class="svgwm" x="232" y="392" font-size="56" fill="#fff" textLength="143" lengthAdjust="spacingAndGlyphs">CHICKS</text>
+            <text class="svgwm" x="232" y="442" font-size="56" fill="#fff" textLength="154" lengthAdjust="spacingAndGlyphs">THAT FI</text>
+            <use href="#xmark" x="386" y="402.8" width="28" height="39.2" fill="#F26419"/>
+          </svg>
+          <figcaption>On the toolbox.</figcaption>
+        </figure></li>
+
+        <li class="mock m-cap"><figure>
+          <svg viewBox="0 0 600 600" role="img" aria-labelledby="t-cap"><title id="t-cap">A navy work cap with an embroidered round patch: the emblem ringed by the name</title>
+            <defs>
+              <path id="arc-top" d="M236 284a64 64 0 0 1 128 0"/>
+              <path id="arc-bot" d="M236 284a64 64 0 0 0 128 0"/>
+            </defs>
+            <rect width="600" height="600" fill="#F6F7F6"/>
+            <ellipse cx="300" cy="474" rx="220" ry="14" fill="#1B2A41" opacity=".12"/>
+            <path d="M112 392C112 190 190 140 300 140s188 50 188 252Z" fill="#1B2A41"/>
+            <path d="M300 140v252M212 160c-8 80-14 160-16 232M388 160c8 80 14 160 16 232" fill="none" stroke="#2E4160" stroke-width="3"/>
+            <circle cx="300" cy="140" r="9" fill="#1B2A41"/>
+            <path d="M96 388h408c4 52-84 82-204 82S92 440 96 388Z" fill="#162236"/>
+            <path d="M104 404c36 48 126 60 196 60s160-12 196-60" fill="none" stroke="#F26419" stroke-width="7" stroke-linecap="round"/>
+            <circle cx="300" cy="284" r="88" fill="#C9A36A"/>
+            <circle cx="300" cy="284" r="82" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="6 5"/>
+            <use href="#emblem" x="262" y="246" width="76" height="76"/>
+            <text class="svgwm" font-size="20" fill="#1B2A41" letter-spacing="2"><textPath href="#arc-top" startOffset="50%" text-anchor="middle">CHICKS THAT FIX</textPath></text>
+            <text class="svgbody" font-size="13" font-weight="600" fill="#1B2A41" letter-spacing="1"><textPath href="#arc-bot" startOffset="50%" text-anchor="middle">chixthatfix.com</textPath></text>
+          </svg>
+          <figcaption>On the crew's caps.</figcaption>
+        </figure></li>
+
+        <li class="mock m-phone"><figure>
+          <svg viewBox="0 0 600 600" role="img" aria-labelledby="t-phone"><title id="t-phone">A phone showing a channel page for Chicks That Fix, with the handle chixthatfix</title>
+            <defs><clipPath id="scr"><rect x="200" y="40" width="200" height="520" rx="28"/></clipPath></defs>
+            <rect width="600" height="600" fill="#fff"/>
+            <rect x="190" y="30" width="220" height="540" rx="36" fill="#121C2D"/>
+            <g clip-path="url(#scr)">
+              <rect x="200" y="40" width="200" height="520" fill="#fff"/>
+              <rect x="200" y="40" width="200" height="110" fill="#F26419"/>
+              <text class="svgwm" x="216" y="96" font-size="30" fill="#1B2A41" textLength="76.8" lengthAdjust="spacingAndGlyphs">CHICKS</text>
+              <text class="svgwm" x="216" y="130" font-size="30" fill="#1B2A41" textLength="82.5" lengthAdjust="spacingAndGlyphs">THAT FI</text>
+              <use href="#xmark" x="298.5" y="109" width="15" height="21" fill="#1B2A41"/>
+              <circle cx="246" cy="166" r="32" fill="#fff"/>
+              <use href="#emblem" x="222" y="142" width="48" height="48"/>
+              <text class="svgbody" x="288" y="166" font-size="17" font-weight="700" fill="#1B2A41">Chicks That Fix</text>
+              <text class="svgbody" x="288" y="186" font-size="13" font-weight="500" fill="#4F6075">@chixthatfix</text>
+              <rect x="216" y="212" width="90" height="30" rx="15" fill="#F26419"/>
+              <text class="svgbody" x="261" y="232" font-size="14" font-weight="700" fill="#1B2A41" text-anchor="middle">Follow</text>
+              <text class="svgbody" x="216" y="272" font-size="13" font-weight="700" fill="#1B2A41">Videos</text>
+              <rect x="216" y="279" width="42" height="3" fill="#F26419"/>
+              <text class="svgbody" x="276" y="272" font-size="13" font-weight="500" fill="#4F6075">Live</text>
+              <text class="svgbody" x="310" y="272" font-size="13" font-weight="500" fill="#4F6075">Playlists</text>
+              <text class="svgbody" x="368" y="272" font-size="13" font-weight="500" fill="#4F6075">About</text>
+              <path d="M200 290h200" stroke="#E6E9EB" stroke-width="2"/>
+              <g fill="#D5DADD">
+                <rect x="216" y="304" width="80" height="50" rx="6"/><rect x="312" y="304" width="80" height="50" rx="6"/>
+                <rect x="216" y="388" width="80" height="50" rx="6"/><rect x="312" y="388" width="80" height="50" rx="6"/>
+                <rect x="216" y="472" width="80" height="50" rx="6"/><rect x="312" y="472" width="80" height="50" rx="6"/>
+                <rect x="216" y="360" width="70" height="6" rx="3"/><rect x="216" y="370" width="46" height="6" rx="3"/>
+                <rect x="312" y="360" width="70" height="6" rx="3"/><rect x="312" y="370" width="46" height="6" rx="3"/>
+                <rect x="216" y="444" width="70" height="6" rx="3"/><rect x="216" y="454" width="46" height="6" rx="3"/>
+                <rect x="312" y="444" width="70" height="6" rx="3"/><rect x="312" y="454" width="46" height="6" rx="3"/>
+                <rect x="216" y="528" width="70" height="6" rx="3"/><rect x="312" y="528" width="70" height="6" rx="3"/>
+              </g>
+              <g fill="#1B2A41">
+                <path d="M250 319l14 10-14 10Z"/><path d="M346 319l14 10-14 10Z"/>
+                <path d="M250 403l14 10-14 10Z"/><path d="M346 403l14 10-14 10Z"/>
+                <path d="M250 487l14 10-14 10Z"/><path d="M346 487l14 10-14 10Z"/>
+              </g>
+            </g>
+            <rect x="270" y="48" width="60" height="18" rx="9" fill="#121C2D"/>
+            <rect x="265" y="546" width="70" height="5" rx="2.5" fill="#1B2A41"/>
+          </svg>
+          <figcaption>As a channel, with the short spelling as the handle.</figcaption>
+        </figure></li>
+
+        <li class="mock m-shop"><figure>
+          <svg viewBox="0 0 600 600" role="img" aria-labelledby="t-shop"><title id="t-shop">A shop front: the wordmark on a navy fascia sign, an orange-striped awning, and the emblem on a hanging blade sign</title>
+            <defs><pattern id="awn" width="48" height="60" patternUnits="userSpaceOnUse"><rect width="48" height="60" fill="#fff"/><rect width="24" height="60" fill="#F26419"/></pattern></defs>
+            <rect width="600" height="600" fill="#F6F7F6"/>
+            <rect x="48" y="96" width="504" height="430" fill="#E6E9EB"/>
+            <rect x="48" y="96" width="504" height="92" fill="#1B2A41"/>
+            <rect x="48" y="188" width="504" height="6" fill="#121C2D"/>
+            <text class="svgwm" x="124.2" y="163" font-size="58" fill="#fff" textLength="319.6" lengthAdjust="spacingAndGlyphs">CHICKS THAT FI</text>
+            <use href="#xmark" x="443.8" y="122.4" width="29" height="40.6" fill="#F26419"/>
+            <path d="M36 194h528l-16 54H52Z" fill="url(#awn)"/>
+            <g fill="url(#awn)"><circle cx="60" cy="248" r="12"/><circle cx="84" cy="248" r="12"/><circle cx="108" cy="248" r="12"/><circle cx="132" cy="248" r="12"/><circle cx="156" cy="248" r="12"/><circle cx="180" cy="248" r="12"/><circle cx="204" cy="248" r="12"/><circle cx="228" cy="248" r="12"/><circle cx="252" cy="248" r="12"/><circle cx="276" cy="248" r="12"/><circle cx="300" cy="248" r="12"/><circle cx="324" cy="248" r="12"/><circle cx="348" cy="248" r="12"/><circle cx="372" cy="248" r="12"/><circle cx="396" cy="248" r="12"/><circle cx="420" cy="248" r="12"/><circle cx="444" cy="248" r="12"/><circle cx="468" cy="248" r="12"/><circle cx="492" cy="248" r="12"/><circle cx="516" cy="248" r="12"/><circle cx="540" cy="248" r="12"/></g>
+            <rect x="84" y="276" width="236" height="214" rx="4" fill="#1B2A41"/>
+            <rect x="92" y="284" width="220" height="198" fill="#2E4160"/>
+            <path d="M110 482 250 284h40L150 482Z" fill="#3B5078" opacity=".6"/>
+            <use href="#emblem" x="167" y="330" width="70" height="70"/>
+            <text class="svgbody" x="202" y="458" font-size="16" font-weight="600" fill="#fff" text-anchor="middle">chicksthatfix.com</text>
+            <rect x="356" y="276" width="150" height="250" rx="4" fill="#1B2A41"/>
+            <rect x="366" y="286" width="130" height="150" fill="#2E4160"/>
+            <rect x="366" y="446" width="130" height="72" fill="#243655"/>
+            <rect x="480" y="392" width="8" height="40" rx="4" fill="#F26419"/>
+            <rect x="8" y="238" width="48" height="8" fill="#1B2A41"/>
+            <path d="M20 246v22M48 246v22" stroke="#1B2A41" stroke-width="3"/>
+            <use href="#emblem" x="-2" y="268" width="72" height="72"/>
+            <rect y="526" width="600" height="74" fill="#D5DADD"/>
+            <rect y="526" width="600" height="6" fill="#B8C0C8"/>
+            <rect x="366" y="530" width="130" height="14" rx="3" fill="#F26419"/>
+          </svg>
+          <figcaption>Over the door.</figcaption>
+        </figure></li>
+
+      </ul>
+    </div>
+  </section>
+
+  <section class="band" id="fits" aria-labelledby="fits-h">
+    <div class="wrap fits-grid">
+      <div>
+        <h2 id="fits-h">Who it fits</h2>
+        <p class="lead">Anyone whose audience already says the words. The name does the positioning; the owner just has to show up.</p>
+      </div>
+      <ul class="fits">
+        <li>
+          <svg viewBox="0 0 56 56" aria-hidden="true"><path d="M8 22 12 12h36l-4 10Z" fill="#F26419"/><path d="M20 12l-4 10M30 12l-4 10M40 12l-4 10" stroke="#1B2A41" stroke-width="2.5"/><rect x="8" y="22" width="40" height="26" rx="3" fill="none" stroke="#1B2A41" stroke-width="2.5"/><path d="M8 30h40" stroke="#1B2A41" stroke-width="2.5"/></svg>
+          <div><b>A television or streaming series about women in the trades.</b><p>The title is already written, and it reads the same on a poster and in a program guide.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 56 56" aria-hidden="true"><rect x="6" y="14" width="34" height="28" rx="5" fill="none" stroke="#1B2A41" stroke-width="2.5"/><path d="M40 24l10-6v20l-10-6Z" fill="#F26419"/><path d="M20 22v12l10-6Z" fill="#1B2A41"/></svg>
+          <div><b>A creator with a repair, DIY or auto channel.</b><p>A brand name that outgrows a personal handle and can carry merchandise, courses and a crew.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 56 56" aria-hidden="true"><path d="M10 36C10 18 18 12 28 12s18 6 18 24Z" fill="#F26419"/><path d="M28 12v24" stroke="#1B2A41" stroke-width="2.5"/><rect x="5" y="36" width="46" height="7" rx="3.5" fill="#1B2A41"/></svg>
+          <div><b>A tool, workwear or hardware brand launching a line for women.</b><p>A name customers repeat to each other without a campaign behind it.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 56 56" aria-hidden="true"><path d="M8 28 28 10l20 18" fill="none" stroke="#1B2A41" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M14 24v22h28V24" fill="none" stroke="#1B2A41" stroke-width="2.5"/><rect x="24" y="32" width="8" height="14" fill="#F26419"/></svg>
+          <div><b>A handywoman, auto-repair or home-services company.</b><p>A shop sign people remember from the street, and a web address they can spell after hearing it once.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 56 56" aria-hidden="true"><path d="M28 12 52 22 28 32 4 22Z" fill="#1B2A41"/><path d="M14 26v10c0 4 28 4 28 0V26" fill="none" stroke="#1B2A41" stroke-width="2.5"/><path d="M52 22v12" stroke="#F26419" stroke-width="3" stroke-linecap="round"/><circle cx="52" cy="36" r="2.5" fill="#F26419"/></svg>
+          <div><b>A nonprofit or trade school teaching skills to women and girls.</b><p>A banner that says exactly who it is for, in words that make people smile.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band-concrete" id="how" aria-labelledby="how-h">
+    <div class="wrap deal">
+      <div class="spec" id="included">
+        <h2 id="spec-h">What is included</h2>
+        <dl aria-labelledby="spec-h">
           <dt>Domains</dt><dd>ChicksThatFix.com and ChixThatFix.com</dd>
           <dt>Extension</dt><dd>.com, both</dd>
           <dt>Registrar</dt><dd>GoDaddy</dd>
@@ -185,49 +553,49 @@ a:hover{text-decoration-thickness:3px}
           <dt>Payment</dt><dd>Escrow.com</dd>
           <dt>Transfer</dt><dd>Into your GoDaddy account, or by authorization code to any registrar</dd>
         </dl>
-      </aside>
+      </div>
+      <div>
+        <h2 id="how-h">How a sale works</h2>
+        <ol class="steps">
+          <li><div><b>Email an offer.</b><p>Include the figure you have in mind and, if you like, what you plan to build. You will hear back from the owner, not a broker.</p></div></li>
+          <li><div><b>Agree the price in writing.</b><p>There is no commission on the seller's side, so the number you agree is the number you pay, plus the Escrow.com fee as agreed between us.</p></div></li>
+          <li><div><b>Pay through Escrow.com.</b><p>Your funds are held by a licensed third party and released only when both domains are in your account.</p></div></li>
+          <li><div><b>Take ownership.</b><p>The transfer starts as soon as Escrow.com confirms your payment: an account change if you are at GoDaddy, or an authorization code for any other registrar.</p></div></li>
+        </ol>
+      </div>
     </div>
   </section>
 
-  <section class="band" aria-labelledby="fits-h">
-    <div class="wrap">
-      <h2 id="fits-h">Who it fits</h2>
-      <ul class="fits">
-        <li><b>A television or streaming series about women in the trades.</b> The title is already written, and it reads the same on a poster and in a program guide.</li>
-        <li><b>A creator with a repair, DIY or auto channel.</b> A brand name that outgrows a personal handle and can carry merchandise, courses and a crew.</li>
-        <li><b>A tool, workwear or hardware brand launching a line for women.</b> A name customers repeat to each other without a campaign behind it.</li>
-        <li><b>A handywoman, auto-repair or home-services company.</b> A shop sign people remember from the street, and a web address they can spell after hearing it once.</li>
-        <li><b>A nonprofit or trade school teaching skills to women and girls.</b> A banner that says exactly who it is for, in words that make people smile.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="band" aria-labelledby="how-h">
-    <div class="wrap">
-      <h2 id="how-h">How a sale works</h2>
-      <ol class="steps">
-        <li><div><b>Email an offer.</b><p>Include the figure you have in mind and, if you like, what you plan to build. You will hear back from the owner, not a broker.</p></div></li>
-        <li><div><b>Agree the price in writing.</b><p>There is no commission on the seller's side, so the number you agree is the number you pay, plus the Escrow.com fee as agreed between us.</p></div></li>
-        <li><div><b>Pay through Escrow.com.</b><p>Your funds are held by a licensed third party and released only when both domains are in your account.</p></div></li>
-        <li><div><b>Take ownership.</b><p>The transfer starts as soon as Escrow.com confirms your payment: an account change if you are at GoDaddy, or an authorization code for any other registrar.</p></div></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="band band-offer" id="offer" aria-labelledby="offer-h">
-    <div class="wrap">
-      <h2 id="offer-h">Make an offer</h2>
-      <p class="offer-lead">Send the figure you have in mind to</p>
-      <p class="offer-addr"><a id="offer-mail" href="#offer" data-u="douglas.boynton" data-d="gmail.com">douglas.boynton [at] gmail [dot] com</a></p>
-      <p class="offer-actions"><a class="btn btn-orange" id="offer-button" href="#offer">Email an offer</a></p>
-      <p class="offer-note">One email starts it. Say what you would pay and, if you like, what you would build; the owner replies personally. Both domains are sold together.</p>
+  <section class="band band-orange" id="offer" aria-labelledby="offer-h">
+    <div class="wrap offer">
+      <div>
+        <h2 id="offer-h">Make an offer</h2>
+        <p class="offer-lead">Send the figure you have in mind to</p>
+        <p class="offer-addr"><a id="offer-mail" href="#offer" data-u="douglas.boynton" data-d="gmail.com">douglas.boynton [at] gmail [dot] com</a></p>
+        <p class="offer-actions"><a class="btn btn-navy" id="offer-button" href="#offer">Email an offer</a></p>
+        <p class="offer-note">One email starts it. Say what you would pay and, if you like, what you would build; the owner replies personally. Both domains are sold together.<noscript>Write to douglas.boynton at gmail dot com.</noscript></p>
+      </div>
+      <div class="kit">
+        <h3>What to put in the email</h3>
+        <ul>
+          <li>The figure you have in mind, in US dollars.</li>
+          <li>What you plan to build, if you want to say.</li>
+          <li>Your name and, if there is one, your company.</li>
+        </ul>
+        <p>The subject line is filled in for you when you use the button.</p>
+      </div>
     </div>
   </section>
 </main>
 
 <footer class="foot">
   <div class="wrap">
+    <a class="brand" href="#top" aria-label="ChicksThatFix.com, top of page">
+      <svg viewBox="0 0 120 120" aria-hidden="true"><use href="#emblem"/></svg>
+      <span>ChicksThatFix.com</span>
+    </a>
     <p>ChicksThatFix.com and ChixThatFix.com are offered for sale by their registrant. This page sells two domain names and nothing else; it is not affiliated with any company, show or person.</p>
+    <p>The wordmark, emblem and mockups on this page were drawn for it to show the name in use. No product, program, shop or channel shown here exists.</p>
     <p>&copy; 2026</p>
   </div>
 </footer>
@@ -241,7 +609,7 @@ a:hover{text-decoration-thickness:3px}
   var body = 'Offer (USD): %0A%0AIntended use (optional): %0A%0AName and company: %0A';
   var href = 'mailto:' + addr + '?subject=' + subject + '&body=' + body;
   a.href = href;
-  a.textContent = addr;
+  a.innerHTML = a.getAttribute('data-u') + '@<wbr>' + a.getAttribute('data-d');
   var b = document.getElementById('offer-button');
   if (b) { b.href = href; }
 })();

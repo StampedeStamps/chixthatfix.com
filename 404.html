@@ -3,22 +3,55 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page not found</title>
+<title>Page not found, but the domains are still for sale</title>
 <meta name="robots" content="noindex">
+<meta name="theme-color" content="#1B2A41">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;min-height:100vh;display:flex;align-items:center;background:#F2611C;color:#fff;font-family:Barlow,"Segoe UI",Arial,sans-serif;font-size:1.25rem;line-height:1.4}
-main{padding:3rem clamp(1.25rem,6vw,5rem);max-width:40ch}
-h1{font-family:Impact,"Arial Narrow",sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(3rem,12vw,7rem);line-height:.85;margin:0 0 1.25rem}
-a{display:inline-block;background:#2F3A4A;color:#fff;text-decoration:none;font-weight:700;padding:.8rem 1.2rem;border-radius:4px;margin-top:1rem}
-a:focus-visible{outline:3px solid #fff;outline-offset:3px}
+:root{--orange:#F26419;--orange-deep:#D4500F;--navy:#1B2A41;--white:#fff;--display:"Barlow Condensed","Arial Narrow","Roboto Condensed",sans-serif;--body:Barlow,"Segoe UI",Arial,sans-serif;--gutter:clamp(1.25rem,4vw,3.5rem)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:var(--navy);color:var(--white);font-family:var(--body);font-size:1.2rem;line-height:1.5}
+svg{display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--white);outline-offset:3px}
+.top{padding:1.1rem var(--gutter)}
+.brand{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1}
+.brand svg{width:2.4rem;height:2.4rem}
+main{flex:1;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(2rem,5vw,5rem);align-items:center;max-width:1200px;width:100%;margin:0 auto;padding:clamp(2rem,6vh,4rem) var(--gutter) clamp(3rem,8vh,5rem)}
+.tag{display:inline-flex;align-items:center;gap:.6rem;background:var(--orange);color:var(--navy);font-weight:700;font-size:1rem;line-height:1;padding:.6rem .95rem .6rem .7rem;border-radius:3px;margin:0 0 1.5rem}
+.tag::before{content:"";width:.85rem;height:.85rem;border-radius:50%;background:var(--orange);border:.22rem solid var(--navy)}
+h1{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:clamp(4rem,11vw,8.5rem);line-height:.86;letter-spacing:-.01em;margin:0 0 1.25rem}
+p{margin:0 0 1rem;max-width:40ch}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:1.25rem;margin-top:1.75rem}
+.btn{display:inline-block;background:var(--orange);color:var(--navy);font-family:var(--display);font-weight:700;font-size:1.5rem;line-height:1;text-transform:uppercase;letter-spacing:.02em;padding:.85rem 1.3rem .7rem;border-radius:4px;text-decoration:none}
+.btn:hover{background:var(--orange-deep)}
+.bigx{width:100%;max-width:22rem;margin:0 auto;fill:var(--orange)}
+.stripe{height:16px;background:linear-gradient(to bottom,#F26419 0 4px,#E6E9EB 4px 6px,#F26419 6px 10px,#E6E9EB 10px 12px,#F26419 12px 16px)}
+@media (max-width:760px){main{grid-template-columns:1fr}.bigx{max-width:12rem;margin:0}}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<g id="wrench"><path transform="rotate(14 0 -58)" d="M-8-78.5V-54a8 8 0 0 0 16 0V-78.5A22 22 0 1 1-8-78.5Z"/><rect x="-12" y="-44" width="24" height="88" rx="5"/><path fill-rule="evenodd" d="M-22 58a22 22 0 1 0 44 0a22 22 0 1 0-44 0ZM9 58 4.5 65.8h-9L-9 58l4.5-7.8h9Z"/></g>
+<symbol id="emblem" viewBox="0 0 120 120"><path d="M60 2 110.2 31v58L60 118 9.8 89V31Z" fill="#F26419"/><g transform="translate(60 60) scale(.4)" fill="#1B2A41"><g transform="rotate(30)"><use href="#wrench"/></g><g transform="rotate(-30)"><use href="#wrench"/></g></g></symbol>
+</defs></svg>
+<header class="top">
+  <a class="brand" href="/"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#emblem"/></svg><span>ChicksThatFix.com</span></a>
+</header>
 <main>
-<h1>Not here</h1>
-<p>That page does not exist, but the domains are still for sale.</p>
-<a href="/">Back to the offer</a>
+  <div>
+    <p class="tag">Page not found</p>
+    <h1>Wrong drawer.</h1>
+    <p>That page does not exist, but the domains are still for sale: ChicksThatFix.com and ChixThatFix.com, together, offered by their owner.</p>
+    <p class="actions"><a class="btn" href="/#offer">Back to the offer</a><a href="/">Start at the top</a></p>
+  </div>
+  <svg class="bigx" viewBox="-58 -82 116 164" aria-hidden="true" focusable="false"><g transform="rotate(30)"><use href="#wrench"/></g><g transform="rotate(-30)"><use href="#wrench"/></g></svg>
 </main>
+<div class="stripe" aria-hidden="true"></div>
 </body>
 </html>

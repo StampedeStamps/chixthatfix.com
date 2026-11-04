@@ -138,18 +138,14 @@ a:hover{text-decoration-thickness:3px}
 .sheet{background:var(--chalk);border:1px solid var(--concrete-deep);border-radius:6px;padding:clamp(1.25rem,2.5vw,2rem)}
 .sheet-wm{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:clamp(3.25rem,5.2vw,4.75rem);line-height:.86;letter-spacing:-.01em;margin:0}
 .sheet-wm span{display:block}
-.sheet-alt{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:clamp(1.8rem,2.6vw,2.4rem);line-height:1;letter-spacing:-.005em;color:var(--steel);margin:1rem 0 0}
-.sheet-alt .xw{fill:var(--steel)}
-.sheet-row{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem}
-.sheet-emblem{width:clamp(4rem,6vw,5.5rem);height:auto;flex:none}
-.chips{display:flex;flex-wrap:wrap;gap:.55rem 1.1rem;list-style:none;margin:1.5rem 0 0;padding:1.25rem 0 0;border-top:2px solid var(--concrete-deep)}
-.chips li{display:flex;align-items:center;gap:.5rem;font-size:.95rem;font-weight:600}
-.chips i{width:1.5rem;height:1.5rem;border-radius:50%;display:block;border:1px solid rgba(27,42,65,.18)}
-.sheet-type{margin:1rem 0 0;font-size:.95rem;color:var(--steel)}
-.sheet-type b{color:var(--navy)}
+.sheet-row{display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+.sheet-emblem{width:clamp(5rem,9vw,7.5rem);height:auto;flex:none}
+.sheet-addr{font-family:var(--display);font-weight:700;font-size:clamp(1.6rem,2.4vw,2.1rem);line-height:1.15;letter-spacing:.005em;margin:1.5rem 0 0;overflow-wrap:anywhere}
+.sheet-bar{display:flex;height:.65rem;margin:1.25rem 0 0;border-radius:3px;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(27,42,65,.18)}
+.sheet-bar i{flex:1;display:block}
 .caption{font-size:.95rem;color:var(--steel);margin:.85rem 0 0}
 
-/* What the name becomes: the mockups */
+/* The name in use: the mockups */
 .mocks{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(.75rem,1.6vw,1.4rem);list-style:none;margin:0;padding:0}
 .mock{grid-column:span 12}
 .mock figure{margin:0}
@@ -189,7 +185,7 @@ a:hover{text-decoration-thickness:3px}
 .offer-addr a:hover{text-decoration-thickness:5px}
 .offer-actions{margin:0 0 1.5rem}
 .offer-note{max-width:var(--measure);margin:0}
-.offer-note noscript{display:block;margin-top:.5rem;font-weight:600}
+.offer-noscript{margin-top:.5rem;font-weight:600}
 .kit{background:var(--navy);color:var(--white);border-radius:6px;padding:clamp(1.25rem,2.5vw,2rem)}
 .kit h3{font-family:var(--display);font-weight:700;font-size:1.6rem;line-height:1;text-transform:uppercase;letter-spacing:.01em;margin:0 0 1rem}
 .kit ul{list-style:none;margin:0;padding:0}
@@ -289,11 +285,10 @@ a:hover{text-decoration-thickness:3px}
       <div>
         <p class="tag">For sale by the owner</p>
         <h1 class="wordmark" id="hero-h">
-          <span class="sr-only">Chicks That Fix</span>
-          <span class="wm" aria-hidden="true">
+          <span class="wm">
             <span class="wm-line">Chicks</span>
             <span class="wm-line">That</span>
-            <span class="wm-line">Fi<svg class="xw" viewBox="-58 -82 116 164" focusable="false"><g class="w1"><use href="#wrench"/></g><g class="w2"><use href="#wrench"/></g></svg></span>
+            <span class="wm-line">Fi<span class="sr-only">x</span><svg class="xw" viewBox="-58 -82 116 164" aria-hidden="true" focusable="false"><g class="w1"><use href="#wrench"/></g><g class="w2"><use href="#wrench"/></g></svg></span>
           </span>
         </h1>
       </div>
@@ -309,36 +304,29 @@ a:hover{text-decoration-thickness:3px}
     <div class="wrap why">
       <div class="prose">
         <h2 id="why-h">Why the name works</h2>
-        <p>Say it once and it sticks. Chicks That Fix rhymes, it names the work (repair, trades, hands-on skill) and it carries an attitude: capable, unbothered, a little cheeky. That is a lot for three words to do, and it does it without a tagline.</p>
-        <p>It is already a show title, a shop sign, a hashtag, a tool line and a podcast name, with no explaining required. Women-run repair services, women in the trades and women-led DIY channels are no longer a niche story. The name that owns this space should be short, memorable and unmistakably theirs.</p>
-        <p>Two spellings, one owner. ChicksThatFix.com is the formal name; ChixThatFix.com is the one people type on a phone and the one that fits a social handle. Buying both means nobody else can trade on the shorter spelling, and both resolve wherever you decide.</p>
-        <p>Both spellings end in the same letter, and that letter is the logo. The X is two crossed wrenches: it works at the size of a van and at the size of a favicon, and it belongs to whoever owns these two names.</p>
+        <p>Say it once and it sticks. Chicks That Fix rhymes, says what the work is, and carries an attitude: capable, unbothered, a little cheeky. Three words, and no tagline needed.</p>
+        <p>It works as a show title, a shop sign, a hashtag, a tool line or a podcast name without a word of explanation. Women in the trades, women-run repair shops and women-led DIY channels are no longer a niche story, and the name that leads that story should be short, memorable and unmistakably theirs.</p>
+        <p>Both spellings come with the sale. ChicksThatFix.com is the full name. ChixThatFix.com is the short one: the spelling people type on a phone, and the one that fits a social handle. Owning both keeps imitators off the short spelling, and each address points wherever you choose.</p>
+        <p>Both spellings end in X, and the X is the logo: two crossed wrenches that read on the side of a van and in a browser tab alike.</p>
       </div>
-      <figure class="sheet-fig">
-        <div class="sheet">
+      <figure class="sheet-fig" aria-label="Brand board: the Chicks That Fix wordmark with the X drawn as two crossed wrenches, the hex-nut emblem, the two addresses ChicksThatFix.com and ChixThatFix.com, and a bar of the five brand colours">
+        <div class="sheet" aria-hidden="true">
           <div class="sheet-row">
-            <p class="sheet-wm" role="img" aria-label="The Chicks That Fix wordmark, with the X drawn as two crossed wrenches"><span>Chicks</span><span>That</span><span>Fi<svg class="xw" viewBox="-58 -82 116 164" aria-hidden="true" focusable="false"><g transform="rotate(30)"><use href="#wrench"/></g><g transform="rotate(-30)"><use href="#wrench"/></g></svg></span></p>
-            <svg class="sheet-emblem" viewBox="0 0 120 120" role="img" aria-label="The emblem: a hex nut with the crossed-wrench X"><use href="#emblem"/></svg>
+            <p class="sheet-wm"><span>Chicks</span><span>That</span><span>Fi<svg class="xw" viewBox="-58 -82 116 164" aria-hidden="true" focusable="false"><g transform="rotate(30)"><use href="#wrench"/></g><g transform="rotate(-30)"><use href="#wrench"/></g></svg></span></p>
+            <svg class="sheet-emblem" viewBox="0 0 120 120" focusable="false"><use href="#emblem"/></svg>
           </div>
-          <p class="sheet-alt" role="img" aria-label="Chix That Fix, the short spelling, set in the same mark">Chi<svg class="xw" viewBox="-58 -82 116 164" aria-hidden="true" focusable="false"><g transform="rotate(30)"><use href="#wrench"/></g><g transform="rotate(-30)"><use href="#wrench"/></g></svg> That Fi<svg class="xw" viewBox="-58 -82 116 164" aria-hidden="true" focusable="false"><g transform="rotate(30)"><use href="#wrench"/></g><g transform="rotate(-30)"><use href="#wrench"/></g></svg></p>
-          <ul class="chips" aria-label="Palette">
-            <li><i style="background:#F26419"></i>Safety orange</li>
-            <li><i style="background:#1B2A41"></i>Oil</li>
-            <li><i style="background:#4F6075"></i>Steel</li>
-            <li><i style="background:#E6E9EB"></i>Concrete</li>
-            <li><i style="background:#C9A36A"></i>Canvas</li>
-          </ul>
-          <p class="sheet-type"><b>Type:</b> Barlow Condensed for the mark and the headlines, Barlow for everything else. Both are open fonts, free to use anywhere.</p>
+          <p class="sheet-addr">ChicksThatFix.com<br>ChixThatFix.com</p>
+          <div class="sheet-bar"><i style="background:#F26419"></i><i style="background:#1B2A41"></i><i style="background:#4F6075"></i><i style="background:#E6E9EB"></i><i style="background:#C9A36A"></i></div>
         </div>
-        <figcaption class="caption">A starting identity, drawn for this page to show what the name becomes. The sale is the two domain names.</figcaption>
+        <figcaption class="caption">Concept branding created for this page, to show the name in use.</figcaption>
       </figure>
     </div>
   </section>
 
   <section class="band band-concrete" id="inuse" aria-labelledby="inuse-h">
     <div class="wrap">
-      <h2 id="inuse-h">What the name becomes</h2>
-      <p class="lead">Six places the name could live, drawn for this page. None of these exist yet; the point is how little explaining any of them needs.</p>
+      <h2 id="inuse-h">The name in use</h2>
+      <p class="lead">Six places the name could live. None of them exists yet, and none of them needs explaining.</p>
       <ul class="mocks">
 
         <li class="mock m-van"><figure>
@@ -514,7 +502,7 @@ a:hover{text-decoration-thickness:3px}
     <div class="wrap fits-grid">
       <div>
         <h2 id="fits-h">Who it fits</h2>
-        <p class="lead">Anyone whose audience already says the words. The name does the positioning; the owner just has to show up.</p>
+        <p class="lead">Anyone whose audience already uses the words. The name does the positioning before the first ad runs.</p>
       </div>
       <ul class="fits">
         <li>
@@ -547,9 +535,9 @@ a:hover{text-decoration-thickness:3px}
         <h2 id="spec-h">What is included</h2>
         <dl aria-labelledby="spec-h">
           <dt>Domains</dt><dd>ChicksThatFix.com and ChixThatFix.com</dd>
-          <dt>Extension</dt><dd>.com, both</dd>
+          <dt>Extension</dt><dd>.com for both</dd>
           <dt>Registrar</dt><dd>GoDaddy</dd>
-          <dt>Status</dt><dd>Held privately by the registrant, sold as one package</dd>
+          <dt>Status</dt><dd>Privately owned, sold as one package</dd>
           <dt>Payment</dt><dd>Escrow.com</dd>
           <dt>Transfer</dt><dd>Into your GoDaddy account, or by authorization code to any registrar</dd>
         </dl>
@@ -558,7 +546,7 @@ a:hover{text-decoration-thickness:3px}
         <h2 id="how-h">How a sale works</h2>
         <ol class="steps">
           <li><div><b>Email an offer.</b><p>Include the figure you have in mind and, if you like, what you plan to build. You will hear back from the owner, not a broker.</p></div></li>
-          <li><div><b>Agree the price in writing.</b><p>There is no commission on the seller's side, so the number you agree is the number you pay, plus the Escrow.com fee as agreed between us.</p></div></li>
+          <li><div><b>Agree the price in writing.</b><p>No broker and no commission: the figure we agree is the figure you pay, plus the Escrow.com fee as we agree it.</p></div></li>
           <li><div><b>Pay through Escrow.com.</b><p>Your funds are held by a licensed third party and released only when both domains are in your account.</p></div></li>
           <li><div><b>Take ownership.</b><p>The transfer starts as soon as Escrow.com confirms your payment: an account change if you are at GoDaddy, or an authorization code for any other registrar.</p></div></li>
         </ol>
@@ -573,7 +561,8 @@ a:hover{text-decoration-thickness:3px}
         <p class="offer-lead">Send the figure you have in mind to</p>
         <p class="offer-addr"><a id="offer-mail" href="#offer" data-u="douglas.boynton" data-d="gmail.com">douglas.boynton [at] gmail [dot] com</a></p>
         <p class="offer-actions"><a class="btn btn-navy" id="offer-button" href="#offer">Email an offer</a></p>
-        <p class="offer-note">One email starts it. Say what you would pay and, if you like, what you would build; the owner replies personally. Both domains are sold together.<noscript>Write to douglas.boynton at gmail dot com.</noscript></p>
+        <p class="offer-note">One email starts it. Say what you would pay and, if you like, what you would build. The owner replies personally, and both domains sell together.</p>
+        <noscript><p class="offer-note offer-noscript">Write to douglas.boynton at gmail dot com.</p></noscript>
       </div>
       <div class="kit">
         <h3>What to put in the email</h3>
@@ -594,8 +583,8 @@ a:hover{text-decoration-thickness:3px}
       <svg viewBox="0 0 120 120" aria-hidden="true"><use href="#emblem"/></svg>
       <span>ChicksThatFix.com</span>
     </a>
-    <p>ChicksThatFix.com and ChixThatFix.com are offered for sale by their registrant. This page sells two domain names and nothing else; it is not affiliated with any company, show or person.</p>
-    <p>The wordmark, emblem and mockups on this page were drawn for it to show the name in use. No product, program, shop or channel shown here exists.</p>
+    <p>ChicksThatFix.com and ChixThatFix.com are offered for sale by their owner. This page is not affiliated with any company, show or person.</p>
+    <p>The branding and mockups on this page are concepts, shown to illustrate the name in use; the sale is for the two domain names.</p>
     <p>&copy; 2026</p>
   </div>
 </footer>

@@ -41,6 +41,7 @@
   ]
 }
 </script>
+<script>if (location.hostname.indexOf('chixthatfix') !== -1) { document.documentElement.classList.add('chix'); }</script>
 <style>
 :root{
   --orange:#F26419;
@@ -104,6 +105,10 @@ a:hover{text-decoration-thickness:3px}
 .wordmark{margin:0}
 .wm{display:block;font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:clamp(5.5rem,15.5vw,14rem);line-height:.84;letter-spacing:-.015em}
 .wm-line{display:block}
+/* One page on two hosts: the head script marks ChixThatFix.com, where the first word reads Chix (a plain X; the wrench X only ends FIX) */
+.name-chix{display:none}
+.chix .name-chicks{display:none}
+.chix .name-chix{display:inline}
 .xw{display:inline-block;height:.70em;width:.50em;vertical-align:baseline;margin-left:0;overflow:visible;fill:var(--orange)}
 .hero-copy{padding-bottom:.6rem}
 .hero-lede{font-size:clamp(1.25rem,1.8vw,1.5rem);line-height:1.4;font-weight:500;max-width:34ch;margin:0 0 1.75rem;color:#E8EDF3}
@@ -286,7 +291,7 @@ a:hover{text-decoration-thickness:3px}
         <p class="tag">For sale by the owner</p>
         <h1 class="wordmark" id="hero-h">
           <span class="wm">
-            <span class="wm-line">Chicks</span>
+            <span class="wm-line"><span class="name-chicks">Chicks</span><span class="name-chix">Chix</span></span>
             <span class="wm-line">That</span>
             <span class="wm-line">Fi<span class="sr-only">x</span><svg class="xw" viewBox="-58 -82 116 164" aria-hidden="true" focusable="false"><g class="w1"><use href="#wrench"/></g><g class="w2"><use href="#wrench"/></g></svg></span>
           </span>
